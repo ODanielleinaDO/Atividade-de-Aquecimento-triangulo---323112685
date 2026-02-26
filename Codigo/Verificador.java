@@ -52,5 +52,8 @@ public class Verificador {
 
 
 
-//daniel
+//Daniel Luca 
 //323112685
+
+//Hercules Henrique
+//322121514
