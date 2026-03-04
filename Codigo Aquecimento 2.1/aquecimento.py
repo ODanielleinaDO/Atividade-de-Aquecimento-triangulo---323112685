@@ -1,0 +1,27 @@
+# Conjunto de palavras reservadas
+RESERVADAS = {"if", "else", "while", "for", "return",
+              "int", "System", "out", "print",
+              "public", "class"}
+
+# Lista de palavras extraídas de um código-fonte
+codigo_fonte = [
+    "public", "class", "Main", "int", "contador",
+    "if", "contador", "return", "resultado",
+    "print", "System", "out", "while", "variavel"
+]
+
+# Convertendo a lista para conjunto
+palavras_codigo = set(codigo_fonte)
+
+# Interseção → palavras reservadas presentes no código
+reservadas_encontradas = palavras_codigo.intersection(RESERVADAS)
+
+# Diferença → possíveis identificadores
+identificadores = palavras_codigo.difference(RESERVADAS)
+
+# Exibindo resultados
+print("Palavras reservadas encontradas:")
+print(reservadas_encontradas)
+
+print("\nPossíveis identificadores:")
+print(identificadores)
